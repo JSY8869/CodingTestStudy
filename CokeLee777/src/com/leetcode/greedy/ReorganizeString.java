@@ -1,8 +1,10 @@
 package com.leetcode.greedy;
 
-import java.util.Collections;
 import java.util.PriorityQueue;
 
+/**
+ * https://leetcode.com/problems/reorganize-string/
+ */
 public class ReorganizeString {
     
     public static class Alphabet implements Comparable<Alphabet>{
@@ -73,6 +75,9 @@ public class ReorganizeString {
         return String.valueOf(result);
     }
 
+    /**
+     * 정답 코드
+     */
     public static String solution(String s) {
         int[] nums = new int[26];
         //알파벳들 각각의 개수를 카운팅

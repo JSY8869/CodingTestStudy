@@ -23,6 +23,9 @@ public class MajorityElement {
         return result;
     }
 
+    /**
+     * 정답 코드
+     */
     public static int solution(int[] num) {
 
         int major=num[0], count = 1;

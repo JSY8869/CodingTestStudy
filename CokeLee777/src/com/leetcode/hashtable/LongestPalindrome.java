@@ -32,6 +32,9 @@ public class LongestPalindrome {
         return isOdd ? result + 1 : result;
     }
 
+    /**
+     * 정답 코드
+     */
     public static int solution(String s){
 
         if(s == null || s.length() == 0) return 0;
