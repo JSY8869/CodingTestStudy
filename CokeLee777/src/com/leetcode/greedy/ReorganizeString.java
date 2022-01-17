@@ -49,18 +49,12 @@ public class ReorganizeString {
             }
         }
 
-        Alphabet maxAlpahbet = pq.poll();
         //재정렬하지 못한다면 빈 문자열 반환
-        if(maxAlpahbet.getCount() > (s.length() + 1) / 2) return "";
+        if(pq.peek().getCount() > (s.length() + 1) / 2) return "";
 
         char[] result = new char[s.length()];
         //가장 많이 나온 문자부터 재정렬
         int idx = 0;
-        while(maxAlpahbet.getCount() > 0){
-            result[idx] = maxAlpahbet.getValue();
-            maxAlpahbet.minusCount();
-            idx += 2;
-        }
 
         while(!pq.isEmpty()){
             Alphabet now = pq.poll();
