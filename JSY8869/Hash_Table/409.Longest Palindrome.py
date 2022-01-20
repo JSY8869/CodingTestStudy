@@ -8,14 +8,13 @@ class Solution(object):
         count = Counter(s)
         value = list(count.values())
         result = 0
-        temp = 0
+        temp = False
         for i in range(len(value)):
             if value[i] % 2 == 0:
                 result += value[i]
-                value[i] = 0
-            if value[i] % 2 != 0:
-                result += value[i]-1
-                temp = 1
+            else:
+                result += value[i] - 1
+                temp = True
         return result+temp
 
 
