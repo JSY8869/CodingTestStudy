@@ -1,5 +1,5 @@
 class Solution(object):
-    def findDuplicate(self, nums):
+    def findDuplicate(self, nums): # linked list cycle detection algorithm
         """
         :type nums: List[int]
         :rtype: int
@@ -9,12 +9,10 @@ class Solution(object):
         while True:
             fast = nums[nums[fast]]
             slow = nums[slow]
-            print("fast", fast, "slow", slow)
             if slow == fast:
                 break
         slow = 0
         while slow != fast:
-            print("fast2", fast, "slow2", slow)
             slow = nums[slow]
             fast = nums[fast]
         return slow
