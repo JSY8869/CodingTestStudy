@@ -12,7 +12,7 @@ class Solution:
             else:
                 count += 1
             if count in temp:
-                result = max(result, index-temp[count])
+                result = max(result, index-temp[count]) # index-temp[count] -> 현재 위치 - 전에 같은 count 값이었던 위치
             else:
                 temp[count] = index
         return result
