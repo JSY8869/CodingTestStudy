@@ -2,41 +2,37 @@ from copy import deepcopy
 
 class Solution:
     def solveNQueens(self, n: int) -> list[list[str]]:
-        ret = []
+        result = []
         board = [['.'] * n for _ in range(n)]
-        self.backtracking(n, board, 0, ret)
-        return ret
+        self.backtracking(n, board, 0, result)
+        return result
         
-    def backtracking(self, n, board, num_Q, ret):
-        if num_Q == n:
+    def backtracking(self, n, board, col, result):
+        if col == n: # 체스판 완성
             ret_board = []
             for i in range(n):
-                temp = list(board[i])
-                for j in range(len(temp)):
-                    if temp[j] != 'Q':
-                        temp[j] = '.'
-                ret_board.append(''.join(temp))
-            ret.append(ret_board)
+                ret_board.append(("".join(board[i]).replace("-", ".")))
+            result.append(ret_board)
             return
-        for i in range(n):
-            if board[num_Q][i] == '.':
+        for row in range(n):
+            if board[col][row] == '.':
                 next_board = deepcopy(board)
-                self.place_Q(n, next_board, num_Q, i)
-                self.backtracking(n, next_board, num_Q+1, ret)
+                self.place_Q(n, next_board, col, row)
+                self.backtracking(n, next_board, col+1, result)
                 
-    def place_Q(self, n, board, y, x):
+    def place_Q(self, n, board, y, x): # 가로는 설정할 필요 없음
         i, j = y, x
-        while i <= n - 1:
+        while i <= n - 1: # 세로
             board[i][j] = '-'
             i += 1
-        i, j = y, x
-        while i <= n - 1 and j >= 0:
+        i = y
+        while i <= n - 1 and j >= 0: # 대각선
             board[i][j] = '-'
             i += 1
             j -= 1
         i, j = y, x
-        while i <= n - 1 and j <= n - 1:
+        while i <= n - 1 and j <= n - 1: # 대각선
             board[i][j] = '-'
             i += 1
             j += 1
-        board[y][x] = 'Q'
+        board[y][x] = 'Q' # 현재 위치에 퀸 위치
