@@ -7,12 +7,11 @@ class Solution:
         
         def promising(i, col):         #현재 퀸의 위치가 가능한지 판단해주는 함수
             k = 1
-            flag = True
-            while(k < i and flag):
+            while(k < i):
                 if col[i] == col[k] or abs(col[i] - col[k]) == i - k:       #같은 열이거나 대각선에 위치하면 False
-                    flag = False
+                    return False
                 k += 1
-            return flag
+            return True
 
         def n_queens(i, col):
             if promising(i, col):           #퀸이 유망하지 않다면 백트래킹
