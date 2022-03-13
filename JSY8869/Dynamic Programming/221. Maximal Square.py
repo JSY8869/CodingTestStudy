@@ -9,7 +9,7 @@ class Solution:
 
         for row in range(1, len(matrix)):
             for col in range(1, len(matrix[0])):
-                if matrix[row][col] >= 1:
+                if matrix[row][col] == 1:
                     matrix[row][col] = min(matrix[row-1][col-1], matrix[row-1][col], matrix[row][col-1]) + 1 # 주변에 가장 작은값 + 1이 현재 칸이 만들 수 있는 가장 큰 사각형
                     
         result = 0
