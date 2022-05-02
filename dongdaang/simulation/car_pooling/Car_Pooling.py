@@ -20,8 +20,9 @@ class Solution:
                     total -= tmp[1]
                 else:
                     break
-            if total + people <= capacity:
-                total += people
+            
+            total += people
+            if total <= capacity:
                 heapq.heappush(heap, (end, people))
             else:
                 return False
