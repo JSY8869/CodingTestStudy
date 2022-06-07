@@ -4,3 +4,5 @@
 - [Broken Calculator](https://github.com/JSY8869/CodingTestStudy/blob/CokeLee777/develope/CokeLee777/src/com/leetcode/greedy/brokencalculator/broken_calculator.md)
 - [Frequency of the Most Frequent Element](https://github.com/JSY8869/CodingTestStudy/blob/CokeLee777/develope/CokeLee777/src/com/leetcode/greedy/freqmostfreqelement/freq_most_freq_element.md)
 - [Maximum Number of Events That Can Be Attended](https://github.com/JSY8869/CodingTestStudy/blob/CokeLee777/develope/CokeLee777/src/com/leetcode/greedy/maxnumofevents/max_num_of_events.md)
+- [Video Stitching](https://github.com/JSY8869/CodingTestStudy/blob/CokeLee777/develope/CokeLee777/src/com/leetcode/greedy/videostitching/videostitching.md)
+- [Minimum Number of Increments on Subarrays to Form a Target Array](https://github.com/JSY8869/CodingTestStudy/blob/CokeLee777/develope/CokeLee777/src/com/leetcode/greedy/minnumofsubarray/min_num_of_subarray.md)
