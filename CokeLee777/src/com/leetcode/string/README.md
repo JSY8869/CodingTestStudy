@@ -6,3 +6,5 @@
 - [Word Break](https://github.com/JSY8869/CodingTestStudy/tree/main/CokeLee777/src/com/leetcode/string/wordbreak/word_break.md)
 - [Smallest String Starting From Leaf](https://github.com/JSY8869/CodingTestStudy/tree/main/CokeLee777/src/com/leetcode/string/smallstringleaf/small_string_leaf.md)
 - [Word Ladder 2](https://github.com/JSY8869/CodingTestStudy/tree/main/CokeLee777/src/com/leetcode/string/wordladder2/word_ladder2.md)
+- [Simplify Path](https://github.com/JSY8869/CodingTestStudy/tree/main/CokeLee777/src/com/leetcode/string/simplifypath/simplify_path.md)
+- [Satisfiability of Equality Equations](https://github.com/JSY8869/CodingTestStudy/tree/main/CokeLee777/src/com/leetcode/string/satisfiabilityofEE/satisfiability_of_EE.md)
